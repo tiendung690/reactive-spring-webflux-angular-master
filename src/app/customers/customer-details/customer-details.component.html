@@ -1,0 +1,13 @@
+<div *ngIf="customer" class="cliente-container">
+	<div class="row dados-cliente">
+		<div class="col-sm-3">{{customer.name}}</div>
+		<div class="col-sm-3">{{customer.age}}</div>
+		<div class="col-sm-3">{{customer.active}}</div>
+		<div class="col-sm-1">
+			<span class="btn btn-primary" *ngIf='customer.active' (click)='updateActive(false)'>Inativar</span>
+			<span class="btn btn-primary" *ngIf='!customer.active' (click)='updateActive(true)'>Ativar</span></div>
+		<div class="col-sm-1">
+				<span class="btn btn-danger" (click)='deleteCustomer()'>Remover</span>
+		</div>
+	</div>
+</div>

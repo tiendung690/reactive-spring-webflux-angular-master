@@ -1,0 +1,14 @@
+<br/>
+<div class="row header">
+	<div class="col-sm-3">NOME</div>
+	<div class="col-sm-3">IDADE</div>
+	<div class="col-sm-3">ATIVO</div>
+</div>
+
+<div *ngFor="let customer of customers$ | async">
+	<customer-details [customer]='customer'></customer-details>
+</div>
+
+<div>
+	<button type="button" class="button btn-danger" (click)='deleteCustomers()'>Delete All</button>
+</div>

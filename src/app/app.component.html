@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Reative Spring WebFlux + Angular 6</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a routerLink="customers" class="nav-link" routerLinkActive="active">
+          Clientes
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">
+          Novo
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="search" class="nav-link" routerLinkActive="active">
+          Buscar
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
